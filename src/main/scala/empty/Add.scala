@@ -19,7 +19,8 @@ class Add extends Module {
 
   val reg = RegInit(0.U(8.W))
   reg := io.a + io.b
-
+  
+  val x = WireDefault(0.U(4.W))
   io.c := reg
 }
 
